@@ -1,9 +1,15 @@
 {
-  "image":"mcr.microsoft.com/devcontainers/universal:2",
+  "image":"mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/python:1": { "version": "3.12" },
     "ghcr.io/devcontainers/features/rust:1": {},
-    "ghcr.io/michalt/codespace-features/cargo-binstall:0.0.2": {
-      "packages": "crate-meta-data jj-cli git-delta"
+    "ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {},
+    "ghcr.io/devcontainers-contrib/features/ninja-asdf:2": {},
+    "ghcr.io/devcontainers-contrib/features/ripgrep:1": {},
+    "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
+    "ghcr.io/michalt/codespace-features/cargo-binstall:0": {
+      "packages": "jj-cli git-delta"
     }
   }
 }
