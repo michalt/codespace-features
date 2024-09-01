@@ -1,25 +1,14 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "json.schemas": [
-                    {
-                        "fileMatch": [
-                            "*/devcontainer-feature.json"
-                        ],
-                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
-                    }
-                ]
-            },
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
+  "image":"mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
     },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
-    "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {},
+    "ghcr.io/devcontainers-contrib/features/ninja-asdf:2": {},
+    "ghcr.io/devcontainers-contrib/features/ripgrep:1": {},
+    "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+  }
 }
