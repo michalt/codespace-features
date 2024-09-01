@@ -9,6 +9,9 @@
     "ghcr.io/devcontainers-contrib/features/fish-apt-get:1": {},
     "ghcr.io/devcontainers-contrib/features/ninja-asdf:2": {},
     "ghcr.io/devcontainers-contrib/features/ripgrep:1": {},
-    "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {}
+    "ghcr.io/devcontainers-contrib/features/tmux-apt-get:1": {},
+    "ghcr.io/michalt/codespace-features/cargo-binstall:latest": {
+      "packages": "crate-meta-data, jj-cli, git-delta"
+    }
   }
 }
